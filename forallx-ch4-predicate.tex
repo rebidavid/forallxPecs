@@ -918,7 +918,7 @@ For a more detailed discussion of Russell's theory of definite descriptions, inc
 %bound variable
 %scope
 
-%DR firdítása kezdet
+%DR fordítása kezdet
 
 \practiceproblems
 
@@ -942,6 +942,8 @@ For a more detailed discussion of Russell's theory of definite descriptions, inc
 \problempart
 \label{pr.QLalligators}
 Using the symbolization key given, translate each English-language sentence into QL.
+
+A megadott szimbólumkulccsal fordítsa le a magyar nyelvű mondatokat QL-re.
 \begin{ekey}
 \item[UD:] all animals
 \item[Ax:] $x$ is an alligator.
@@ -949,6 +951,17 @@ Using the symbolization key given, translate each English-language sentence into
 \item[Rx:] $x$ is a reptile.
 \item[Zx:] $x$ lives at the zoo.
 \item[Lxy:] $x$ loves $y$.
+\item[a:] Amos
+\item[b:] Bouncer
+\item[c:] Cleo
+\end{ekey}
+\begin{ekey}
+\item[UD:] minden állat
+\item[Ax:] $x$ egy aligátor.
+\item[Mx:] $x$ egy majom.
+\item[Rx:] $x$ egy hüllő
+\item[Zx:] $x$ az állatkertben él.
+\item[Lxy:] $x$ kedveli $y$.
 \item[a:] Amos
 \item[b:] Bouncer
 \item[c:] Cleo
@@ -970,12 +983,31 @@ Using the symbolization key given, translate each English-language sentence into
 \item Every monkey that Cleo loves is also loved by Amos.
 \item There is a monkey that loves Bouncer, but sadly Bouncer does not reciprocate this love.
 \end{earg}
+\begin{earg}
+\item Amos, Bouncer, és Cleo mind az állatkertben élnek. 
+\item Bouncer hüllő, de nem egy aligátor. 
+\item Ha Cleo kedveli Bouncer, akkor Bouncer majom. 
+\item Ha Bouncer és Cleo aligátorok, akkor Amos mind kettejüket kedveli.
+\item Néhány hüllő állatkertben él. 
+\item Minden aligátor hüllő. 
+\item Valamennyi állat, aki az állatkertben él vagy majom, vagy aligátor. 
+\item Vannak hüllők, amik nem aligátorok.
+\item Cleo kedveli a hüllőket.
+\item Bouncer kedvel minden majmot, aki az állatkertben él.
+\item Minden majom, akit Amos kedvel, viszont kedveli őt.
+\item Ha bármelyik állat hüllő, akkor Amos is az
+\item Ha bármelyik állat aligátor, akkor az hüllő.
+\item Minden majom, akit Cleo kedvel, azt Amos is kedveli.
+\item Van majom, aki kedveli Bouncer, de sajnos Bouncer nem viszonozza.
+\end{earg}
 
 
 
 \problempart
 \label{pr.BarbaraEtc}
 These are syllogistic figures identified by Aristotle and his successors, along with their medieval names. Translate each argument into QL.
+
+Ezek szillogisztikus számok, amelyeket Arisztotelész és utódai azonosítottak, középkori neveikkel együtt. Fordítson le minden argumentumot QL-re.
 \begin{description}
 \item[Barbara] All $B$s are $C$s. All $A$s are $B$s.
 	\therefore\  All $A$s are $C$s.
@@ -1009,6 +1041,40 @@ These are syllogistic figures identified by Aristotle and his successors, along 
 	\therefore\  Some $C$ is $A$.
 \item[Frisesomorum] Some $B$ is $C$. No $A$s are $B$s.
 	\therefore\  Some $C$ is not $A$.
+\end{description}
+\begin{description}
+\item[Barbara] Minden $B$ $C$. Minden $A$ $B$.
+	\therefore\  Minden $A$ $C$.
+\item[Baroco] Minden $C$ $B$. Néhány $A$ nem $B$.
+	\therefore\  Néhány $A$ nem $C$.
+\item[Bocardo] Néhány $B$ nem $C$. Minden $A$ $B$.
+	\therefore\  Néhány $A$ nem $C$.
+\item[Celantes] Egyik $B$ sem $C$. Minden $A$ $B$.
+	\therefore\  Egyik $C$ sem $A$.
+\item[Celarent] Egyik $B$ sem $C$. Minden $A$ $B$.
+	\therefore\  Egyik $A$ sem $C$.
+\item[Cemestres] Eygik $C$ sem $B$. Egyik $A$ sem $B$.
+	\therefore\  Egyik $A$ sem $C$.
+\item[Cesare] Egyik $C$ sem $B$. Minden $A$ $B$.
+	\therefore\  Egyik $A$ sem $C$.
+\item[Dabitis] Minden $B$ $C$. Néhány $A$ $B$.
+	\therefore\  Néhány $C$ $A$.
+\item[Darii] Minden $B$ $C$. Néhány $A$ $B$.
+	\therefore\  Néhány $A$ $C$.
+\item[Datisi] Minden $B$ $C$. Minden $A$ $C$.
+	\therefore\  Néhány $A$ $C$.
+\item[Disamis] Néhány $A$ $B$. Minden $A$ $C$.
+	\therefore\  Néhány $B$ $C$.
+\item[Ferison] Egyik $B$ sem $C$. Néhány $A$ $B$.
+	\therefore\  Néhány $A$ nem $C$.
+\item[Ferio] Egyik $B$ sem $C$. Néhány $A$ $B$.
+	\therefore\  Héhány $A$ nem $C$.
+\item[Festino] Egyik $C$ sem $B$. Héhány $A$ $B$.
+	\therefore\  Néhány $A$ nem $C$.
+\item[Baralipton] Minden $B$ $C$. Minden $A$ $B$.
+	\therefore\  Néhány $C$ $A$.
+\item[Frisesomorum] Néhány $B$ $C$. Egyik $A$ sem $B$.
+	\therefore\  Néhány $C$ nem $A$.
 \end{description}
 
 %DR fordításas vége
